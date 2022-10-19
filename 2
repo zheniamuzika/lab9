@@ -1,16 +1,28 @@
-bar=input('Введіть рядок з українських, англйських літер та розділові знаки')
-if bar == ("А","Б","В","Г","Д","Е","Є","Ж","З","И","І","Й","К","Л","М","Н","О","П","Р","С","Т","У","Ф","Х","Ц","Ч","Ш","Щ","Ь","Ю","Я"):
-    foo = (bar)
-    print(foo)
-    bar1 = len(foo)
-    print(bar1)
-elif bar == ("A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"):
-    foo1 = (bar)
-    print(foo1)
-    bar2 = len(foo1)
-    print(bar2)
-else:
-    foo3 = (bar)
-    print(foo3)
-    bar3 = len(foo3)
-    print(bar3)
+start=input('Введіть рядок з українських, англйських літер та розділові знаки')
+s1= "йццукенгшщзхїфівапролджєячсмитьбю"
+set1=set(s1)
+s2= "qwertyuiopasdfghjklzxcvbnm"
+set2=set(s2)
+s3="!@#$%^&*()_+-={}[];:"'|.>,<'
+set3=set(s3)
+rez1=""
+rez2=""
+rez3=""
+L=len(start)
+for i in range (L):
+    if start[i] in set1:
+        rez1=rez1+start[i]
+        print(rez1)
+        print(L)
+    elif start[i] in set2:
+        rez2=rez2+start[i]
+        print(rez2)
+        print(L)
+    elif start[i] in set3:
+        rez3=rez3+start[i]
+        print(rez3)
+        print(L)
+    else:
+        x="error"
+
+
